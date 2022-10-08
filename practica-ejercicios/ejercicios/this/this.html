@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+    <link rel="stylesheet" href="../../assets/index.css">
+</head>
+<body>
+    <h1>THIS</h1>
+    <p>
+        this se refiere a un objeto,
+        ese objeto es el que actualmente está ejecutando un
+        pedazo de código.
+
+        <p>
+            No se puede asignar un valor a this
+            directamente y este depende
+            de en que scope nos encontramos:
+        </p>
+
+        <p>Cuando llamamos a this en el Global Scope o Function Scope,
+            se hace referencia al objeto window. A excepción de
+            cuando estamos en strict mode que nos regresará undefined.</p>
+        <p>Cuando llamamos a this desde una función que está
+            contenida en un objeto, this se hace referencia a ese objeto.</p>
+        <p>Cuando llamamos a this desde una “clase”, se hace referencia a
+            la instancia generada por el constructor.</p>
+    </p>
+    <script>
+        // this en el scope global
+        console.log(`this: ${this}`);
+
+        // this en el scope de una funcion
+        function whoIsThis() {
+            return this;
+        }
+        console.log(`whoIsThis(): ${whoIsThis()}`);
+
+        // this en el scope de una funcion strict mode
+        function whoIsThisStrict() {
+            "use strict";
+            return this;
+        }
+        console.log(`whoIsThisStrict(): ${whoIsThisStrict()}`);
+
+        // this en el contexto de un objeto
+        const person = {
+            name: 'Dajan',
+            saludar: function () {
+                console.log(`Hola soy ${this.name}`)
+            }
+        }
+        person.saludar();
+
+        // this cuando sacamos a una funcion de un objeto
+        const action = person.saludar;
+        action();
+
+        // this en el contexto de una "clase"
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.saludar = function () {
+            console.log(`Hola me llamo ${this.name}`)
+        }
+
+        const angela = new Person('Angela');
+        angela.saludar()
+    </script>
+</body>
+</html>

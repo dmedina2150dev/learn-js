@@ -1,0 +1,34 @@
+{
+  "name": "jsnpm",
+  "version": "1.0.0",
+  "description": "Construi un paquete para node",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmedina2150dev/javascript-npm-package.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "package"
+  ],
+  "author": "Dajan Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmedina2150dev/javascript-npm-package/issues"
+  },
+  "homepage": "https://github.com/dmedina2150dev/javascript-npm-package#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "date-fns": "^2.25.0",
+    "webpack": "^5.61.0"
+  },
+  "optionalDependencies": {
+    "eslint": "^8.1.0"
+  }
+}

@@ -1,0 +1,92 @@
+Son como recetas que resuelven problemas que nos encontramos frecuentemente
+en el diseño de software.
+
+-> Una solucion para un problema que ocurre dentro de un contexto. Y este contexto
+no se vale que ocurra una vez debe de ocurrir muchas veces.
+    ---> El contexto es la situacion donde aplica el patron.
+    ---> Esta situacion debe ser recurrente
+    ---> Ejemplo: Muchos objetos estan interesados en el estado de otro objeto.
+
+    --> Se refiere a la meta que estas tratando de alcanzar dentro del contexto
+    --> EL problema incluye todas las limitaciones que existen dentro de este contexto
+    --> Ejemplo: Estos objetos quieren recibir notificaciones cuando cambien el estado,
+        sin tener que solicitar informacion
+
+    --> El diseño de la solucion tiene que ser generico. que alcance la meta dentro del contexto
+    --> Ejemplo: Crear una clase donde cualquier objeto se puede suscribir y desuscribir
+        a cambios de estado (Observer Patron)
+
+    --> Every Layout (https://every-layout.dev/) Presenta patrones de diseño web con problemas y soluciones de
+        como acomodar los elementos en una pagina web.
+
+    --> Media Queries (https://mediaqueri.es/)
+
+-> Historia de los patrones de diseño
+    --> LA idea de los patrones de comienza en la arquitectura con Christopher Alexander, Sus libros describen
+        patrones para construir arquitectura dinamica, como casa, pueblos, y ciudades.
+
+        El libro que comenzo el campo de los patrones de diseño de software (DESIGN PATTERNS) de 4 autores publicado
+        en 1995, describe los patrones fundamentales.
+
+-> Beneficios de usar patrones de diseño
+    --> Los patrones de diseño son una caja de herramientas de soluciones bien probadas a problemas comunes
+        en el diseño de software.
+    --> Te proveen un lenguaje comun que permite comunicarse de forma especifica y eficiente.
+
+-> Critica
+    --> Los patrones de diseño son una forma de complejidad
+    --> Son soluciones a las limitaciones de un lenguaje de programacion. Ejemplo: Java o C# no tienen funciones de alto nivel
+    --> "Cuando lo que tienes es un martillo todo parece un clavo"
+
+    --> Seguir este blog (https://blog.codinghorror.com/)
+
+-> Conluciones
+    --> Siempre busca pensar en terminos de diseño, no de patrones
+    --> Usa un patron cuando hay una necesidad natural para usarlo
+    --> Si existe una alternativa mas simple, prefierela.
+
+
+El libro DESIGN PATTERNS definio las categorias de los patrones de diseño:
+    --> Patrones creacionales:
+        * Estos patrones te proveen diferentes formas de crear objetos.
+        * Lista de patrones creacionales:
+            - Abstract Factory
+            - Builder (Constructor):
+                Es usado para permitir la creacion de una variedad de objetos complejos desde un objeto fuente
+                (Separa la creacion de un objeto complejo de su estructura, de tal forma que el mismo proceso de construccion puede servir para crear representaciones diferentes)
+            - Factory Method
+            - Prototype
+            - Singleton:
+                * Es un patron que te asegura que una clase solo tiene una instancia
+                * Esta unica instancia puede ser consumida por cualquier otro objeto.
+                * Img ./assets/img/singleton_patron.png
+    --> Patrones estructurales:
+        * Estos patrones te definen formas de compner objetos para obtener nuevas estructuras que son flexibles y eficientes
+        * Lista de patrones estructurales:
+            - Adapter
+            - Bridge
+            - Composite
+            - Decorator:
+                * Añade nuevas responsabilidades a un objeto de forma dinámica permitiendo así extender su funcionalidad sin tener que usar subclases.
+            - Facade
+            - Flyweight
+            - Proxy
+    --> Patrones de comportamiento:
+        * Estos patrones ofrecen formas de manejar diferentes algoritmos y funcionalidades que pueden llegara a tener nuestros objetos o las relaciones entre ellos
+        * Lista de patrones de comportamiento:
+            - Chain of Responsibility
+            - Command
+            - Interpreter
+            - Iterator
+            - Mediator
+            - Memento
+            - Observer:
+                * El patrón observer se compone de un sujeto que ofrece mecanismos de suscripción y desuscripción a múltiples observadores que quieren ser notificados de los cambios en dicho sujeto. Cada observador expone un método de update que es usado por el sujeto para notificar cualquier cambio a todos los suscritos.
+                * Es uno de los patrones más utilizados, algunos ejemplos típicos son:
+                    - Newsletter
+                    - Sockets
+                    - Listeners en páginas web
+            - State
+            - Strategy
+            - Template Method
+            - Visitor
