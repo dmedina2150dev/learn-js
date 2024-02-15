@@ -7,19 +7,10 @@ Aprenderemos JavaScript de 0
 [DEV](https://dev.to/iarchitsharma/the-history-of-javascript-5e98)
 [ROADMAP](https://roadmap.sh/guides/history-of-javascript)
 
-## Usos
 
-## The console 
-[MDN](https://developer.mozilla.org/en-US/docs/Web/API/console)
+## Tips importantes
+__NOTE__: los archivos de javascript normalmente se leen o ejecutan de forma secuencial.
 
-## Variables
-[JavaScriptInfo](https://es.javascript.info/variables)
-[MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables)
-[MDN - var](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/var)
-[MDN - let](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/let)
-[MDN - let](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/const)
-[MDN - hoisting](https://developer.mozilla.org/es/docs/Glossary/Hoisting)
-[MDN - scope](https://developer.mozilla.org/es/docs/Glossary/Scope)
-[MDN - clousure](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures)
-[Medium - scope in functions](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)(Function Scope & Block Scope)
+__NOTE__: Cuando el valor de la variable no va a cambiar es mejor declararla con __(const)__ porque las constantes no tienen propiedades para establecer o cambiar el valor, lo cual las hace más ligeras que una variable con __(let)__ o __(var)__
+
 
