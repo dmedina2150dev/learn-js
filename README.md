@@ -7,6 +7,10 @@ Aprenderemos JavaScript de 0
 [DEV](https://dev.to/iarchitsharma/the-history-of-javascript-5e98)
 [ROADMAP](https://roadmap.sh/guides/history-of-javascript)
 
+### API WEB
+
+[FormData](https://developer.mozilla.org/es/docs/Web/API/FormData)
+
 
 ## Tips importantes
 __NOTE__: los archivos de javascript normalmente se leen o ejecutan de forma secuencial.
