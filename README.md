@@ -1,14 +1,16 @@
 # learn-js
 Aprenderemos JavaScript de 0
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+[MDN](https://developer.mozilla.org/es/docs/Web/JavaScript)
+
 [JavaScriptInfo](https://es.javascript.info/intro)
 
 ## Historia
 [DEV](https://dev.to/iarchitsharma/the-history-of-javascript-5e98)
+
 [ROADMAP](https://roadmap.sh/guides/history-of-javascript)
 
 ### API WEB
-
 [FormData](https://developer.mozilla.org/es/docs/Web/API/FormData)
 
 
